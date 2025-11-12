@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Simonyi Webshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">GameShop</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#" class="active">Contact</a>
+      <a href="#" id="cartButton">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="main-content contact-page">
+    <section class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hi, drop us a message below.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:support@gameshop.gg">support@simonyiesport.edu</a></p>
+        <p>Discord: <a href="https://discord.com/" target="_blank">Kriegron</a></p>
+      </div>
+    </section>
+  </main>
+
+    <aside id="miniCart" class="mini-cart">
+        <div class="mini-cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart" class="close-btn">&times;</button>
+        </div>
+        <div id="cartItems" class="mini-cart-items"></div>
+        <div class="mini-cart-footer">
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+  <div id="cartOverlay" class="overlay"></div>
+
+  <footer class="site-footer">
+    <p>© 2025 GameShop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thanks for contacting us! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

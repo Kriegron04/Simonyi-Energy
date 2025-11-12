@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Simonyi Webshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">GameShop</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" id="cartButton">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="main-content about-page">
+
+    <section class="about-hero">
+      <h1>About Simonyi Energy</h1>
+      <p>Born from a love of gaming, Energy©, and Community — Simonyi Energy brings premium products built for Students, Gamers, and <s>Caffeine Addicts</s> Tired teachers.</p>
+    </section>
+
+    <section class="about-mission">
+    <div class="mission-text">
+        <h2>Our Mission</h2>
+        <p>We're looking to give our fellow students the Energy©</p>
+    </div>
+    </section>
+
+    <section class="about-story">
+      <h2>Our Story</h2>
+      <p>In 2025 students no longer have the Energy© to grind their favorite games after coming home from school because they're all tired and moody, So we decided to create the ultimate formula for Energy© (To be released) </p>
+    </section>
+
+    <section class="about-values">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Performance</h3>
+          <p>We believe in quality gear that delivers results — whether in-game or in life.</p>
+        </div>
+        <div class="value-card">
+          <h3>Community</h3>
+          <p>Our strength comes from students like you. We build with our fans, not just for them.</p>
+        </div>
+        <div class="value-card">
+          <h3>Creativity</h3>
+          <p>We push boundaries with bold designs and limited drops that stand out.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cartOverlay" class="cart-overlay"></div>
+  <aside id="miniCart" class="mini-cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="close-btn">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2025 GameShop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

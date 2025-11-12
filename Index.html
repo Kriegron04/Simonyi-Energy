@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Home | Simonyi Webshop</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Simonyi Energy</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" id="cartButton" class="cart-link">
+        Cart (<span id="cartCount">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Fuel Your Game</h1>
+      <p>Power up with our premium gaming products.</p>
+      <button id="shopBtn" onclick="window.location='#products'">Shop Now</button>
+    </section>
+
+
+    <div class="products">
+      <h2>Shaker Cups</h1>
+      <section id="cups" class="cup-grid product-grid">
+      </section>
+      <h2>Hoodies</h2>
+      <section id="hoodies" class="hoodie-grid product-grid">
+      </section>
+      <h2>Energy Formulas</h2>
+      <section id="" class="product-grid">
+        <h3 id="CS">Coming Soon</h3>
+      </section
+
+    </div>
+  </main>
+
+  <aside id="miniCart" class="mini-cart">
+    <div class="mini-cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-btn">&times;</button>
+    </div>
+    <div id="cartItems" class="mini-cart-items"></div>
+    <div class="mini-cart-footer">
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="cartOverlay" class="overlay"></div>
+
+  <footer class="site-footer">
+    <p>© 2025 Simonyi. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
